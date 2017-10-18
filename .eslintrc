@@ -1,0 +1,168 @@
+{
+	"parser": "babel-eslint",
+	"plugins": [
+		"import",
+		"react"
+	],
+	"env": {
+		"browser": true,
+		"node": true,
+		"es6": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"arrowFunctions": true,
+			"blockBindigs": true,
+			"classes": true,
+			"defaultParam": true,
+			"destructuring": true,
+			"modules": true,
+			"objectLiteralShorthandMethods": true,
+			"objectLiteralShorthandProperties": true,
+			"jsx": true,
+			"restParams": true,	
+			"spread": true,
+			"superInFunctions": true,
+			"templateStrings": true
+		}
+	},
+	"rules": {
+		"strict": [2, "global"],
+		"eqeqeq": 2,
+		"camelcase": [2, {"properties": "always"}],
+		"arrow-body-style": [1, "always"],
+		"arrow-parens": [1, "always"],
+		"arrow-spacing": 2,
+		"block-spacing": 1,
+		"comma-dangle": 0,
+		"constructor-super": 2,
+		"class-methods-use-this": 0,
+		"dot-notation": 1,
+		"global-require": 1,
+		"newline-per-chained-call": [1, { "ignoreChainWithDepth": 4 }],
+		"no-confusing-arrow": [1, { "allowParens": true }],
+		"no-cond-assign": [2, "always"],
+		"no-lone-blocks": 2,
+		"no-var": 2,
+		"no-shadow-restricted-names": 2,
+		"no-shadow": 2,
+		"no-multi-spaces": [
+      		1, 
+      		{
+        		"exceptions": {
+        			"BinaryExpression": true,
+          			"VariableDeclarator": true,
+          			"ImportDeclaration": true,
+          			"Property": false
+        		}
+      		}
+    	],
+		"no-mixed-spaces-and-tabs": [1, "smart-tabs"],
+		"no-new-func": 2,
+		"no-new-wrappers": 2,
+		"no-use-before-define": 2,
+		"no-dupe-keys": 2,
+		"no-nested-ternary": 1,
+		"no-param-reassign": 2,
+		"no-restricted-syntax": [
+      		2,
+      		"DebuggerStatement",
+      		"ForInStatement",
+      		"LabeledStatement",
+      		"WithStatement"
+    	],
+		"no-redeclare": 2,
+		"no-trailing-spaces": 1,
+		"no-template-curly-in-string": 1,
+		"no-plusplus": 0,
+		"object-shorthand": [1, "always"],
+		"one-var": 0,
+		"padded-blocks": 1,
+		"prefer-const": 1,
+		"prefer-template": 1,
+		"quotes": [1, "single", "avoid-escape"],
+		"semi": [2, "always"],
+		"space-before-function-paren": [1, "never"],
+		"space-in-parens": 1,
+		"space-infix-ops": 0,
+		"import/prefer-default-export": 1,
+		"import/no-unresolved": 1,
+		"import/no-extraneous-dependencies": [2, { "devDependencies": true }],
+		"import/no-dynamic-require": 0,
+		"import/no-webpack-loader-syntax": 0,
+		"react/forbid-prop-types": 0,
+		"react/display-name": 0,
+		"react/jsx-boolean-value": 1,
+		"react/jsx-indent": 0,
+		"react/jsx-no-undef": 2,
+		"react/jsx-pascal-case": 1,
+		"react/jsx-uses-react": 1,
+		"react/jsx-uses-vars": 2,
+		"react/jsx-sort-props": 0,
+		"react/jsx-indent-props": 0,
+		"react/jsx-curly-spacing": 1,
+		"react/jsx-key": 1,
+		"react/jsx-first-prop-new-line": [1, "multiline"],
+		"react/jsx-max-props-per-line": [1, {"maximum": 2}],
+		"react/jsx-closing-bracket-location": 0,
+		"react/jsx-no-bind": [1, {
+			"allowArrowFunctions": true,
+			"allowBind": false
+		}],
+		"react/jsx-no-duplicate-props": 1,
+		"react/jsx-no-literals": 0,
+		"react/jsx-no-target-blank": 0,
+		"react/prefer-stateless-function": 0,
+		"react/prefer-es6-class": 1,
+		"react/no-danger": 1,
+		"react/no-did-mount-set-state": 1,
+		"react/no-did-update-set-state": 1,
+		"react/no-multi-comp": 1,
+		"react/no-unknown-property": 1,
+		"react/no-unused-prop-types": 1,
+		"react/no-direct-mutation-state": 1,
+		"react/no-deprecated": 1,
+		"react/no-is-mounted": 2,
+		"react/no-set-state": 0,
+		"react/no-unescaped-entities": 0,
+		"react/find-dom-node": 0,
+		"react/prop-types": 1,
+		"react/sort-prop-types": 0,
+		"react/self-closing-comp": 1,
+		"react/style-prop-object": 2,
+		"react/react-in-jsx-scope": 1,
+		"react/jsx-wrap-multilines": 2,
+		"react/require-render-return": 2,
+		"react/sort-comp": [
+			1,
+			{
+				"order": [
+					"constructor",
+					"lifecycle",
+					"everything-else",
+					"render"
+				],
+				"groups": {
+					"lifecycle": [
+						"statics",
+						"propTypes",
+						"contextTypes",
+						"childContextTypes",
+						"getChildContext",
+						"defaultProps",
+						"state",
+						"shouldComponentUpdate",
+						"componentWillMount",
+						"componentDidMount",
+						"componentWillReceiveProps",
+						"componentWillUpdate",
+						"componentDidUpdate",
+						"componentWillUnmount"
+					]
+				}
+			}
+		]
+	}
+}

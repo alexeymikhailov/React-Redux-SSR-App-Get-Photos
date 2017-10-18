@@ -1,0 +1,47 @@
+{
+  "presets": [
+    [
+      "env", {
+        "targets": {
+          "browsers": [
+            "last 2 versions",
+            "ie >= 11"
+          ]
+        }
+      }
+    ],
+    "flow",
+    "react",
+    "stage-0"
+  ],
+  "plugins": [
+    "dynamic-import-webpack",
+    "syntax-flow",
+    [
+      "react-flow-props-to-prop-types"
+    ],
+    "transform-async-to-generator",
+    "transform-react-display-name",
+	  "transform-react-inline-elements",
+	  "transform-react-jsx",
+	  "transform-object-rest-spread",
+	  "transform-decorators-legacy",
+    "transform-runtime",
+    [
+      "module-resolver", {
+        "root": ["./src", "./src/**/**"],
+        "extensions": [".js", ".jsx"]
+      }
+    ]
+  ],
+  "env": {
+    "production": {
+      "presets": ["react-optimize"]
+    },
+    "development": {
+      "plugins": [
+        "react-hot-loader/babel"
+      ]
+    }
+  }
+}

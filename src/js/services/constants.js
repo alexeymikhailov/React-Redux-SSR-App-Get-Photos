@@ -1,0 +1,2 @@
+export const API_KEY_GOOGLE_MAPS='AIzaSyDQX8lWQ0lam21eiuq0nSSv4fhmCQEuwpw';
+export const API_KEY_FLICKR='369336e7526413ddd4eca39d2d91d63a';
